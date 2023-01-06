@@ -46,4 +46,8 @@ app.post('/', async (req, res) => {
   }
 })
 
+<<<<<<< HEAD
 app.listen(5000, () => console.log('Sever is running on port htttp://localhost:5000'));
+=======
+app.listen(5000, () => console.log('Sever is running on port http://localhost:5000'));
+>>>>>>> 0fcca54 (update server url)
