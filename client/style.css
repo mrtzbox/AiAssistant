@@ -8,8 +8,9 @@
 }
 
 body {
-  background: #dea175;
+  background-color: red;
 }
+
 
 #app {
   width: 100vw;
