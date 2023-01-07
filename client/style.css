@@ -157,3 +157,24 @@ width: 30px;
 height: 30px;
 }
 
+form {
+  position: relative; /* Add this to position the pseudo-elements relative to the chat box */
+}
+
+form::before,
+form::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #000; /* Change the color of the lines here */
+}
+
+form::before {
+  left: 0;
+}
+
+form::after {
+  right: 0;
+}
