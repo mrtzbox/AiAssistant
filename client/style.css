@@ -23,6 +23,13 @@ body {
   justify-content: space-between;
 }
 
+/* Styles for viewports with a width less than 500px */
+@media screen and (max-width: 500px) {
+  #app {
+    flex-direction: column;
+  }
+}
+
 #chat_container {
   flex: 1;
   width: 100%;
@@ -96,6 +103,7 @@ body {
   max-width: 100%;
   overflow-x: scroll;
 
+
   /*
    * white space refers to any spaces, tabs, or newline characters that are used to format the CSS code
    * specifies how white space within an element should be handled. It is similar to the "pre" value, which tells the browser to treat all white space as significant and to preserve it exactly as it appears in the source code.
@@ -148,3 +156,4 @@ form img {
 width: 30px;
 height: 30px;
 }
+
