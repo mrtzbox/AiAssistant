@@ -78,7 +78,7 @@ body {
 }
 
 .ai .profile {
-  background: #10a37f;
+  background: #000000;
 }
 
 .profile img {
@@ -127,7 +127,7 @@ gap: 10px;
 textarea {
 width: 100%;
 
-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
 font-size: 18px;
 
 padding: 10px;
