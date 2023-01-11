@@ -42,11 +42,11 @@ app.post('/', async (req, res) => {
       bot: response.data.choices[0].text
     });
 
-  } catch (error) {
+   catch (error) {
     console.log(error);
     res.status(500).send({ error })
   }
-})
+}
 
 app.listen(5000, () => {
   console.log('Server is running on port http://localhost:5000');
