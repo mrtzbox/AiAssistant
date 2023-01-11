@@ -157,3 +157,13 @@ width: 30px;
 height: 30px;
 }
 
+
+#chat_container {
+  justify-content: center;
+}
+
+
+#chat_container {
+  align-items: center;
+  justify-content: center;
+}
