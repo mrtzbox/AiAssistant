@@ -1,169 +1,78 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Alegreya Sans", sans-serif;
-}
-
-body {
-  background-color: rgb(128, 0, 128);
-}
-
-
-#app {
-  width: 100vw;
-  height: 100vh;
-  background: #8fb9a8;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Styles for viewports with a width less than 500px */
-@media screen and (max-width: 500px) {
-  #app {
-    flex-direction: column;
+@keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
   }
 }
-
-#chat_container {
-  flex: 1;
+body {
+  margin: 0;
+  line-height: normal;
+}
+.healthy-06-icon {
+  position: absolute;
+  top: -61px;
+  left: 0;
+  width: 1400px;
+  height: 980px;
+  object-fit: cover;
+  opacity: 0.46;
+}
+.ai-bot-child,
+.ai-bot-item {
+  position: absolute;
+  top: 112px;
+  left: 540px;
+  border-radius: 40px;
+  width: 338px;
+  height: 594px;
+  object-fit: cover;
+}
+.ai-bot-item {
+  top: 140px;
+  left: 560px;
+  border-radius: 26px;
+  width: 298px;
+  height: 539px;
+}
+.ai-bot-inner,
+.whats-in-your {
+  position: absolute;
+  top: 344px;
+  left: 578px;
+}
+.ai-bot-inner {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: #f0f7ce;
+  top: 573px;
+  left: 572px;
+  border-radius: 16px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  width: 256px;
+  height: 53px;
+  opacity: 1;
+}
+.ai-bot-inner.animate {
+  animation: 1s ease 0s 1 normal forwards scale-down-center;
+}
+.chicken-legs {
+  position: absolute;
+  top: 579px;
+  left: 634px;
+  font-size: 30px;
+}
+.ai-bot {
+  position: relative;
+  background-color: #fff;
   width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-
-  padding-bottom: 20px;
-  scroll-behavior: smooth;
-}
-
-/* hides scrollbar */
-#chat_container::-webkit-scrollbar {
-  display: none;
-}
-
-.wrapper {
-  width: 100%;
-  padding: 15px;
-}
-
-.ai {
-  background: #ffffff;
-}
-
-.chat {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 10px;
-}
-
-.profile {
-  width: 36px;
-  height: 36px;
-  border-radius: 5px;
-
-  background: #000000;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.ai .profile {
-  background: #000000;
-}
-
-.profile img {
-  width: 60%;
-  height: 60%;
-  object-fit: contain;
-}
-
-.message {
-  flex: 1;
-
-  color: #000000;
-  font-size: 20px;
-
-  max-width: 100%;
-  overflow-x: scroll;
-
-
-  /*
-   * white space refers to any spaces, tabs, or newline characters that are used to format the CSS code
-   * specifies how white space within an element should be handled. It is similar to the "pre" value, which tells the browser to treat all white space as significant and to preserve it exactly as it appears in the source code.
-   * The pre-wrap value allows the browser to wrap long lines of text onto multiple lines if necessary.
-*/
-white-space: pre-wrap; 
-
--ms-overflow-style: none;
-scrollbar-width: none;
-}
-
-/* hides scrollbar */
-.message::-webkit-scrollbar {
-display: none;
-}
-
-form {
-width: 100%;
-max-width: 1280px;
-margin: 0 auto;
-padding: 10px;
-background: #ffffff;
-
-display: flex;
-flex-direction: row;
-gap: 10px;
-}
-
-textarea {
-width: 100%;
-
-color: rgb(0, 0, 0);
-font-size: 18px;
-
-padding: 10px;
-background: transparent;
-border-radius: 5px;
-border: none;
-outline: none;
-}
-
-button {
-outline: 0;
-border: 0;
-cursor: pointer;
-background: transparent;
-}
-
-form img {
-width: 30px;
-height: 30px;
-}
-
-
-#chat_container {
-  justify-content: center;
-}
-
-
-#chat_container {
-  align-items: center;
-  justify-content: center;
+  height: 800px;
+  text-align: left;
+  font-size: 40px;
+  color: var(--color-black);
+  font-family: var(--font-spicy-chicken);
 }
