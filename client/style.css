@@ -24,7 +24,7 @@ body {
 }
 
 /* Styles for viewports with a width less than 500px */
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 500px) {
   #app {
     flex-direction: column;
   }
