@@ -13,7 +13,7 @@ body {
 
 
 #app {
-  width: 50vw;
+  width: -50vw;
   height: 100vh;
   background: #8fb9a8;
 
